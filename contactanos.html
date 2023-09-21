@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/iconoTargetCodesBlueTransparent.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Target Codes Enterprise Solutions</title>
+</head>
+
+<body>
+    <header>
+        <div class="first">
+            <p>Tus ideas, Una Metamorfosis Digital</p>
+        </div>
+        <nav>
+            <div id="burger-icon" onclick="toggleMenu(this);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./solutions.html">Soluciones</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+            <img src="img/logoLargeBlueTransparent.png" alt="">
+            <div class="menu">
+                <a href="./index.html">Inicio</a>
+                <a href="./solutions.html">Soluciones</a>
+                <a href="./nosotros.html">Nosotros</a>
+            </div>
+            <button class="buttonContactanos">Contactanos</button>
+        </nav>
+    </header>
+    <section class="formSection">
+        <div class="imgi">
+            <a href="index.html"><img src="img/iconoTargetCodesBlueTransparent.png" alt="" class="img"></a>
+        </div>
+        <form class="formularioi">
+            <script src="js/validacion.js"></script>
+            <h1 class="tin">Escribenos</h1>
+            <div class="contenedor">
+                <div class="input-contenedor">
+                 <i class="fas fa-user icon"></i>
+                 <input type="text" placeholder="Nombre Completo" required>
+                </div>
+                <div class="input-contenedor">
+                 <i class="fas fa-envelope icon"></i>
+                <input type="email" id="emailreg"  placeholder="Correo Electronico" required>
+                 <!--<input  id="email"  placeholder="Correo Electronico" required>--> 
+                </div>
+                <div class="input-contenedor">
+                    <i class="fab fa-readme icon"></i>
+                    <input type="text" placeholder="Mensaje" required>
+                   </div>
+                <!--<div class="input-contenedor">
+                 <i class="fab fa-readme icon"></i>
+                 <input type="number" placeholder="Edad del cursante" required>
+                </div>
+                <div class="input-contenedor">
+                 <i class="fas fa-lock icon"></i>
+                 <input type="password" placeholder="Contraseña" id="contrasenareg" required minlength="8" maxlength="16">
+                </div>-->
+                <!--<button type='submit' class="botoni" id='validate'>Registrate</button>--> 
+                <input type="submit" value="Enviar" class="botoni" onclick="almacenar()" >
+                <!--<p>¿Ya tienes una cuenta?<a href="inico de sesion.html" class="a">Iniciar Sesión</a></p>-->
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <a href="#" target="_blank"><i class="iconos fa-brands fa-instagram fa-3x" ></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp fa-3x" ></i></a>
+            <a href=""><i class="fa-brands fa-facebook fa-3x"></i></a>
+        </div>
+        <div class="links">
+            <p>© 2023 Copyright: <a href="#">TargetCodes.com</a></p>
+            <p>|</p>
+            <a href="#">Terminos y condiciones</a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/870b0a2d47.js" crossorigin="anonymous"></script>
+    <script src="js/functs.js"></script>
+</body>
+
+</html>

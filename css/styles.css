@@ -1,0 +1,572 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Vollkorn&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #ECDFD5;
+}
+/*Header*/
+.first{
+    text-align: center;
+}
+.first p{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0px;
+    height: 25px;
+}
+nav{
+    background-color: #001e3b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav img{
+    width: 320px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0px 20px;
+}
+.menu a:hover{
+    color: #D80037;
+    transition: 0.5s;
+}
+.buttonContactanos{
+    font-family: 'Courier New', Courier, monospace;
+    border: 0px;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    background-color: #D80037;
+    color: #ffffff;
+}
+.buttonContactanos:hover{
+    background-color: #003F84;
+    transition: 1s;
+}
+/*Menu Hambuerguesa*/
+ul {
+    /*Popiedades de la lista, estilo basico y horientacion*/
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#burger-icon {
+    /*caja con las 3 lineas y el menu ul que contiene los links*/
+    margin: auto 0;
+    display: none;
+    cursor: context-menu;
+}
+
+#burger-icon div {
+    /*Configuracion de las 3 lineas*/
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.open .bar1 {
+    /*Cunado se activa el script se da la clase .open y se realiza el respectivo movimiento en las 3 lineas*/
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+#burger-icon a {
+    /*Estilo de la etiqueta a para que sea igual*/
+    text-decoration: none;
+    font-family: fantasy;
+    color: white;
+}
+
+.open .mobile-menu {
+    /*Cuando este abierto la lista aparece con sus propiedades*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*Para alinear los elementos del menu al inicio de la pagina*/
+}
+
+.mobile-menu {
+    /*configuracion inicial antes de que se abra (clic)*/
+    display: none;
+    /*position: absolute; 
+    top: 50px;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;*/
+}
+
+@media (max-width: 768px) {
+
+    /*Cuando cumpla la condicion desapacere el nav principal con display none y aparece el menu hamburuesa*/
+    .menu {
+        display: none;
+    }
+
+    #burger-icon {
+        display: block;
+    }
+    .buttonContactanos{
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+.imgPrincipal{
+    height: 1000px;
+    position: relative;
+}
+.imgPrincipal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.imgPrincipal video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.imgPrincipal div{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgPrincipal div h1{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    text-shadow: 0 0 5px #000000, 0 0 30px #e4daba;
+}
+@media (max-width:768px) {
+    .imgPrincipal div h1{
+        font-size: 60px;
+    }
+}
+hr{
+    color: #ffffff;
+}
+.imgPrincipal div p{
+    color: rgba(255, 255, 255, 0.733);
+    text-align: center;
+    font-size: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001e3b;
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+footer div{
+    flex: 1 0 100%;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+footer div a:hover{
+    transform: scale(1.1);
+    transition: 1.5s;
+    color: #D80037;
+}
+footer div a i{
+    color: #ffffff;
+}
+footer div a i:hover{
+    color: #D80037;
+    transition: 0.5s;
+}
+
+
+
+/**********************************************************************************************************************************/
+/*************************************** ESTILOS PARA SOLUTIONS.HTML ***************************************************************/
+
+
+.principal{
+    height: 600px;
+    position: relative;
+}
+.titlePrincipalSolutions{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.principal h1{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    text-shadow: 0 0 5px #000000, 0 0 30px #e4daba;
+}
+.principal div p{
+    color: rgba(255, 255, 255, 0.801);
+    text-align: center;
+    font-size: 25px;
+}
+.principal > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+@media (max-width:768px) {
+    .principal div h1{
+        font-size: 60px;
+    }
+}
+.imgArrow{
+    display: flex;
+    justify-content: center;
+}
+
+.imgArrow img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+/*********** SECCION DE PRODUCTOS O SERVICIOS ****************/
+
+.sectionsProduct{
+    margin-top: 200px;
+    margin-bottom: 200PX;
+}
+.products{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+/*** CARDS productos ****/
+
+.items{
+    flex: 1 0 33%;
+    padding: 10px;
+}
+.card{
+    border-width: 0px !important;
+    border-radius: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 16px 0px !important;
+    height: 100%;
+}
+.card > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-body{
+    text-align: center;
+}
+.card-title {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+    font-size: 45px;
+}
+.card-text {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    color: #0000008a;
+}
+.boton-card{
+    background-color: #001e3b;
+}
+@media (max-width: 768px) {
+    .items{
+        flex: 0 0 100%;
+    }
+}
+
+/** SECTION ESPECIALIZACION */
+
+.especializacion{
+    background-color: #E9ECEF;
+    margin-bottom: 200px;
+}
+
+.contenidoEspecializacion{
+    padding: 80px 0px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+}
+.contenidoEspecializacion > h2 {
+    font-size: 35px;
+    margin: 0px 0px 90px 0px;
+}
+.contenidoEspecializacion > img {
+    width: 60%;
+}
+/** SECTION LOGO */
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+    background-color: #001e3b;
+}
+.logo img{
+    width: 25%;
+}
+
+
+/************************************************************************************************************************************/
+/*********************************** ESTILOS NOSOTRO.HMTL **************************************************************************/
+.imgPrincipalNosotros{
+    height: 700px;
+    position: relative;
+}
+.imgPrincipalNosotros > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.imgPrincipalNosotros > div{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgPrincipalNosotros div h1{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    text-shadow: 0 0 5px #000000, 0 0 30px #e4daba;
+}
+.imgPrincipalNosotros div p{
+    color: rgba(255, 255, 255, 0.733);
+    text-align: center;
+    font-size: 25px;
+}
+#imgLogoNosotros{
+    filter: brightness(1);
+    width: 100%;
+}
+
+/* SECTION Target Codes */
+.info{
+    margin: 200px 0px;
+}
+.targetCodes{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+.textCodes{
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+    padding: 0px 50px;
+    flex: 0 0 70%;
+}
+.textCodes h2{
+    font-size: 50px;
+    text-shadow: 0 0 2px #ffffff, 0 0 50px #000000;
+    color: #001e3b;
+    margin: 50px 0px;
+}
+.textCodes p{
+    color: #004084a2;
+    font-size: 20px;
+}
+.imgTarget{
+    flex: 1 0 30%;
+    text-align: center;
+}
+.imgTarget > img{
+    border-radius: 50px;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .imgTarget{
+        flex: 1 0 100%;
+    }
+    .textCodes{
+        flex: 1 0 100%;
+    }
+    .imgTarget > img{
+        width: 60%;
+    }
+}
+
+/* SECTION NUESTRO EQUIPO */
+.ourTeamSection{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Vollkorn', serif;
+}
+.titleTeam{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.ourTeam{
+    background-image: url("https://images.pexels.com/photos/3865639/pexels-photo-3865639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    /* Opciones adicionales para configurar la posición de la imagen de fondo: */
+    background-position: center center;
+    /* Repetir la imagen de fondo si es necesario: */
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+    padding: 80px 0px;
+}
+
+.contentPeople{
+    background-color: #ffffffc2;
+    max-width: 85%;
+    margin: 0px auto;
+    padding: 0px 15px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.divPeople{
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.imgPersona{
+    padding: 10px;
+    flex: 0 0 30%;
+}
+.textPersona{
+    padding: 50px;
+    flex: 0 0 70%;
+}
+.imgPersona > img {
+    border-radius: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:768px) {
+    .divPeople{
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    .imgPersona{
+        flex: 0 0 100%;
+    }
+    .textPersona{
+        flex: 0 0 100%;
+    }
+}
+
+/*******************************************************************************************************/
+/********************************** ESTILOS PARA CONTACTANOS.HTML *****************************************/
+
+/* FORMULARIO */
+.formSection{
+    margin-bottom: 200px;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+.formularioi {
+    background:#fff;
+    margin-top: 50px;
+    padding: 3px;
+}
+.tin {
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.botoni {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.botoni:hover {
+    background: black; 
+}
+p {
+    text-align: center;
+}
+.a {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+    padding: 0px 5px;
+}
+.a:hover {
+    color: #f0d85a;
+}
+.imgi {
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin-top: 100px;
+}
+.img {
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+@media(min-width:760px)
+{
+    .formularioi {
+        margin: auto;
+        width: 500px;
+        margin-top: 50px;
+        border-radius: 8px;
+    }
+}
